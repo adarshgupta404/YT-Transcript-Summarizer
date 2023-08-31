@@ -42,7 +42,9 @@ app.post("/getSummary", async (req, res) => {
   });
   
 });
-
+app.get('/', (req, res)=>{
+  res.send("<h1>Welcome to the backend of YTS</h1>")
+})
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

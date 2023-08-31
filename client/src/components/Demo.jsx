@@ -19,7 +19,7 @@ const Demo = () => {
     e.preventDefault();
     
     try {
-      const response = await axios.post("http://localhost:8000/getSummary", {
+      const response = await axios.post("https://yt-transcript-summarizer.vercel.app/getSummary", {
         url: inputUrl,
       });
       const summary = response.data.data;
